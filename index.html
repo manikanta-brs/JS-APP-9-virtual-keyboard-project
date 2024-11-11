@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="d-flex bg-gradient">
+        <div class="d-flex flex-grow-1">
+          <nav class="courseTitle">
+            <button class="navbar-brand border-0">
+              <img src="assets/img/logo.png" alt="logo" />
+            </button>
+          </nav>
+          <div class="flex-grow-1">
+            <div class="JsTitle ps-3 d-flex align-items-center">
+              <img src="assets/img/logo-javascript@2x.png" alt="logo" />
+              <h3 class="mb-0">JS Apps</h3>
+            </div>
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+                <h4>Virtual Keyboard</h4>
+                <p class="pb-0 mb-3 text-start">
+                  Purpose: Virtual Keyboard for both mobile and desktop views.
+                </p>
+                <p class="pb-0 mt-0 text-start">
+                  <a
+                    href="https://github.com/manikanta-brs/JS-APP-9-virtual-keyboard-project"
+                    target="_blank"
+                  >
+                    Git Repository</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container pt-5 pb-5" role="main">
+      <section>
+        <div class="container textbox">
+          <div class="textarea">
+            <textarea
+              name="textarea-content"
+              placeholder="enter your text"
+            ></textarea>
+            <div class="btn clear" id="clear">clear</div>
+          </div>
+        </div>
+
+        <div class="keyboard">
+          <div class="row">
+            <div class="keys btn">!</div>
+            <div class="keys btn">@</div>
+            <div class="keys btn">#</div>
+            <div class="keys btn">$</div>
+            <div class="keys btn">%</div>
+            <div class="keys btn">^</div>
+            <div class="keys btn">&</div>
+            <div class="keys btn">*</div>
+            <div class="keys btn">(</div>
+            <div class="keys btn">)</div>
+            <div class="keys btn">[</div>
+            <div class="keys btn">]</div>
+          </div>
+          <div class="row">
+            <div class="keys btn">1</div>
+            <div class="keys btn">2</div>
+            <div class="keys btn">3</div>
+            <div class="keys btn">4</div>
+            <div class="keys btn">5</div>
+            <div class="keys btn">6</div>
+            <div class="keys btn">7</div>
+            <div class="keys btn">8</div>
+            <div class="keys btn">9</div>
+            <div class="keys btn">0</div>
+            <div class="delete btn" id="delete">delete</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="keys btn">q</div>
+          <div class="keys btn">w</div>
+          <div class="keys btn">e</div>
+          <div class="keys btn">r</div>
+          <div class="keys btn">t</div>
+          <div class="keys btn">y</div>
+          <div class="keys btn">u</div>
+          <div class="keys btn">i</div>
+          <div class="keys btn">o</div>
+          <div class="keys btn">p</div>
+        </div>
+
+        <div class="row">
+          <div class="keys btn">a</div>
+          <div class="keys btn">s</div>
+          <div class="keys btn">d</div>
+          <div class="keys btn">f</div>
+          <div class="keys btn">g</div>
+          <div class="keys btn">h</div>
+          <div class="keys btn">j</div>
+          <div class="keys btn">k</div>
+          <div class="keys btn">l</div>
+        </div>
+        <div class="row">
+          <div class="keys btn">z</div>
+          <div class="keys btn">x</div>
+          <div class="keys btn">c</div>
+          <div class="keys btn">v</div>
+          <div class="keys btn">b</div>
+          <div class="keys btn">n</div>
+          <div class="keys btn">m</div>
+          <div class="shift btn" id="shift">shift</div>
+        </div>
+        <div class="row">
+          <button class="btn space" id="space">space</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-between px-5">
+        <div>ALL RIGHTS RESERVED BRS STUDIO 2024</div>
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+        <div>
+          <img src="assets/img/footer-logo.png" alt="logo" />
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
